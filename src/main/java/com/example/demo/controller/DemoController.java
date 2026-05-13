@@ -8,6 +8,6 @@ public class DemoController {
     
     @GetMapping("/demo")
     private String display(){
-        return "/index.html";
+        return "/title.html";
     }
 }

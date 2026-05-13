@@ -1,0 +1,142 @@
+<!-- src/main/resources/static/index.html -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>天気 Hit&Blow</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+
+            font-family: Arial, sans-serif;
+
+            background: linear-gradient(
+                135deg,
+                #74b9ff,
+                #dfe6e9
+            );
+
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title-box {
+
+            width: 500px;
+
+            background: white;
+
+            border-radius: 20px;
+
+            padding: 50px;
+
+            text-align: center;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+
+            font-size: 48px;
+
+            color: #2d3436;
+
+            margin-bottom: 20px;
+        }
+
+        .sub-title {
+
+            font-size: 18px;
+
+            color: #636e72;
+
+            margin-bottom: 40px;
+
+            line-height: 1.8;
+        }
+        
+        .start-button {
+
+            display: inline-block;
+
+            padding: 15px 40px;
+
+            font-size: 24px;
+
+            font-weight: bold;
+
+            color: white;
+
+            background: linear-gradient(
+                135deg,
+                #0984e3,
+                #6c5ce7
+            );
+
+            border-radius: 12px;
+
+            text-decoration: none;
+
+            transition: all 0.3s ease;
+
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+            position: relative;
+        }
+
+        .start-button:hover {
+
+            transform: translateY(-3px) scale(1.05);
+
+            box-shadow:
+                0 0 12px rgba(9,132,227,0.6),
+                0 0 25px rgba(108,92,231,0.5),
+                0 0 40px rgba(116,185,255,0.4);
+        }
+
+        .start-button:active {
+
+            transform: scale(0.98);
+        }
+
+        .weather-icons {
+
+            font-size: 40px;
+
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="title-box">
+
+    <div class="weather-icons">
+        ☀ 🌧 ⛈ ❄
+    </div>
+
+    <h1>天気 Hit&Blow</h1>
+
+    <div class="sub-title">
+
+        気象データから<br>
+        地方・月・天気タイプを推理しよう！
+
+    </div>
+
+    <a class="start-button" href="battle.html">
+        ゲーム開始
+    </a>
+
+</div>
+
+</body>
+</html>
